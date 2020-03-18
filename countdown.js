@@ -62,7 +62,7 @@ function enableVideo() {
   var enableDistance = enableTime.getTime() - now.getTime();
   var disableDistance = disableTime.getTime() - now.getTime();
   if (disableDistance <= 0) {
-    if (document.getElementById('dragon-stream').style.display === 'none') {
+    if (document.getElementById('dragon-stream').style.display !== 'none') {
       // disable the stream - but not chat! - and update the messages to say that things are over
       document.getElementById('dragon-stream').style.display = 'none';
       document.getElementById('stream-placeholder').style.display = 'flex';
