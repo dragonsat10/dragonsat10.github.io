@@ -1,7 +1,7 @@
 // chat config
 var MESSAGE_LIMIT = 2000;
 var USERNAME_LIMIT = 20;
-var CHAT_URL = 'https://dragonsat11-chat.herokuapp.com:80/'
+var CHAT_URL = 'https://dragonsat11-chat.herokuapp.com/'
 
 // stream config
 var STREAM_URL = 'https://dragonsat11-stream.herokuapp.com/master.m3u8';
