@@ -1,0 +1,275 @@
+@font-face {
+  font-family: 'maenan2';
+  src:url('https://dragonsat10.github.io/maenan2.ttf.woff') format('woff'),
+      url('https://dragonsat10.github.io/maenan2.ttf.svg#maenan2') format('svg'),
+      url('https://dragonsat10.github.io/maenan2.ttf.eot'),
+      url('https://dragonsat10.github.io/maenan2.ttf.eot#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-image: url(https://dragonsat10.github.io/parchment.jpg);
+  background-repeat: repeat;
+  margin: 0;
+}
+
+.custom-header {
+  color: black;
+  line-height: 1;
+  -webkit-font-smoothing: auto;
+  font-family: 'maenan2';
+}
+
+.header {
+  width: 100%;
+  text-align: center;
+  background-image: url(https://dragonsat10.github.io/banner-new.png);
+  background-repeat: repeat-x;
+  margin-bottom: 20px;
+  background-size: auto 105px;
+  height: 90px;
+}
+
+.header h1 {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: url(https://dragonsat10.github.io/parchment.jpg);
+  padding: 20px;
+  font-size: 50px;
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
+
+.subheader {
+  font-size: 20px;
+  text-align: center;
+}
+.subheader-line {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url(https://dragonsat10.github.io/diamond.png);
+  background-size: contain;
+  margin-bottom: 5px;
+  width: 80px;
+  height: 4px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.date, .countdown, .celebrating, .livestream-chat {
+  margin-top: 40px;
+}
+
+.banner {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+.banner-left, .banner-right {
+  display: inline-block;
+}
+.celebrating .banner-left {
+  font-size: 35px;
+  margin-right: 5px;
+}
+.celebrating .banner-right {
+  font-size: 15px;
+  margin-left: 5px;
+  color: #7A281C;
+  text-transform: uppercase;
+  line-height: 12px;
+}
+.date .banner-right {
+  font-size: 35px;
+  margin-right: 5px;
+}
+.date .banner-left {
+  color: #7A281C;
+  font-size: 15px;
+  margin-left: 5px;
+  text-transform: uppercase;
+  line-height: 12px;
+}
+
+.countdown .timer {
+  color: #7A281C;
+  font-size: 35px;
+}
+
+.divider {
+  margin-top: 50px;
+  width: 100%;
+  text-align: center;
+}
+.divider img {
+  max-width: 70%;
+}
+
+/* swap the fullscreen and source selector buttons */
+.vjs-fullscreen-control {
+  order: 2;
+}
+.vjs-http-source-selector {
+  order: 1;
+}
+
+/* make the source selector icon a little bigger */
+.vjs-icon-cog:before {
+  font-size: 1.3em;
+}
+
+.livestream-chat-both-header {
+  display: none;
+  margin-bottom: 10px;
+}
+.livestream-header {
+  margin-bottom: 10px;
+}
+.chat-header {
+  margin-bottom: 10px;
+  margin-top: 40px;
+}
+.livestream-chat-widgets {
+
+}
+.livestream-container {
+  width: calc(100% - 100px - 100px);
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.placeholder {
+  color: white;
+  background-color: black;
+  text-align: center;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  padding: 20px;
+  font-size: 1.5em;
+}
+.chat-container {
+  width: calc(100% - 100px - 100px);
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+
+#dragon-chat {
+  background-color: white;
+}
+#dragon-stream/*, #dragon-chat*/ {
+  display: none;
+}
+#stream-iframe {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+@media screen and (min-width: 350px) {
+  .header {
+    background-size: auto 125px;
+    height: 110px;
+  }
+  .header h1 {
+    font-size: 60px;
+  }
+  .celebrating .banner-left {
+    font-size: 40px;
+    margin-right: 5px;
+  }
+  .celebrating .banner-right {
+    font-size: 18px;
+    margin-left: 5px;
+    line-height: 14px;
+  }
+  .date .banner-right {
+    font-size: 40px;
+    margin-right: 5px;
+  }
+  .date .banner-left {
+    font-size: 18px;
+    margin-left: 5px;
+    line-height: 14px;
+  }
+  .countdown .timer {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .header {
+    background-size: auto 150px;
+    height: 128px;
+  }
+  .header h1 {
+    font-size: 80px;
+  }
+  .subheader {
+    font-size: 30px;
+  }
+  .subheader-line {
+    width: 200px;
+    height: 7px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .celebrating .banner-left {
+    font-size: 80px;
+    margin-right: 10px;
+  }
+  .celebrating .banner-right {
+    font-size: 35px;
+    margin-left: 10px;
+    line-height: 28px;
+  }
+  .date .banner-right {
+    font-size: 80px;
+    margin-left: 10px;
+  }
+  .date .banner-left {
+    font-size: 35px;
+    margin-right: 10px;
+    line-height: 28px;
+  }
+  .countdown .timer {
+    font-size: 80px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .livestream-chat-widgets {
+    display: flex;
+  }
+  .livestream-container {
+    width: calc(60% - 100px - 10px);
+    margin-left: 100px;
+    margin-right: 10px;
+    flex: 4;
+  }
+  .chat-container {
+    width: calc(40% - 100px - 15px);
+    margin-right: 100px;
+    margin-left: 10px;
+    flex: 3;
+    padding-left: 0px;
+    padding-right: 0px;
+    height: initial;
+  }
+  #dragon-chat {
+    width: 100%;
+    height: 100%;
+  }
+  .livestream-chat-both-header {
+    display: block;
+  }
+  .livestream-header {
+    display: none;
+  }
+  .chat-header {
+    display: none;
+  }
+}
