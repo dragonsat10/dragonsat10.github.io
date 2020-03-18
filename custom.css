@@ -106,19 +106,6 @@ body {
   max-width: 70%;
 }
 
-/* swap the fullscreen and source selector buttons */
-.vjs-fullscreen-control {
-  order: 2;
-}
-.vjs-http-source-selector {
-  order: 1;
-}
-
-/* make the source selector icon a little bigger */
-.vjs-icon-cog:before {
-  font-size: 1.3em;
-}
-
 .livestream-chat-both-header {
   display: none;
   margin-bottom: 10px;
