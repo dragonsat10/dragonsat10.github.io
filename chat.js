@@ -85,7 +85,7 @@ function dmoji_replace(html) {
 
 
 $(function() {
-  var WELCOME_MESSAGE = 'Welcome to the DragonsAt10 chat';
+  var WELCOME_MESSAGE = 'Welcome to the DragonsAt11 chat';
   var FADE_TIME = 150; // ms
   var TYPING_TIMER_LENGTH = 400; // ms
   var COLORS = [
